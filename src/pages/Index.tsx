@@ -18,7 +18,6 @@ const Index = () => {
     const preloadImages = async () => {
       try {
         await Promise.all([
-          import('@/assets/cricket-hero.jpg'),
           import('@/assets/joy-profile.jpg'),
         ]);
       } catch (error) {
@@ -59,27 +58,24 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="relative overflow-hidden py-12 bg-gradient-to-r from-primary/10 to-accent/10">
+      <footer className="relative overflow-hidden py-12 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-          <div className="glass-card p-8 rounded-3xl max-w-2xl mx-auto">
-            <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-neon mb-4">
+          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl max-w-2xl mx-auto shadow-xl">
+            <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 mb-4">
               JV
             </div>
-            <p className="text-muted-foreground mb-6">
-              Building the future, one line of code and one cricket match at a time.
+            <p className="text-blue-600 mb-6">
+              Building the future, one line of code at a time.
             </p>
-            <div className="flex justify-center gap-6 text-sm text-muted-foreground">
+            <div className="flex justify-center gap-6 text-sm text-blue-600/70">
               <span>© 2024 Joy Vaghela</span>
               <span>•</span>
               <span>Made with ❤️ and lots of ☕</span>
               <span>•</span>
-              <span className="text-neon-green animate-pulse">Available for hire!</span>
+              <span className="text-green-600 animate-pulse">Available for hire!</span>
             </div>
           </div>
         </div>
-        
-        {/* Floating Cricket Ball */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-neon-red rounded-full animate-bounce-gentle opacity-20" />
       </footer>
     </div>
   );

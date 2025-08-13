@@ -36,7 +36,7 @@ export const CustomCursor = () => {
       {trails.map((trail, index) => (
         <div
           key={trail.id}
-          className="fixed pointer-events-none z-[9998] w-2 h-2 rounded-full bg-neon-red"
+          className="fixed pointer-events-none z-[9998] w-2 h-2 rounded-full bg-blue-500"
           style={{
             left: trail.x - 4,
             top: trail.y - 4,
@@ -55,15 +55,15 @@ export const CustomCursor = () => {
         style={{
           left: position.x - 12,
           top: position.y - 12,
-          background: 'radial-gradient(circle, hsl(var(--neon-red)) 0%, hsla(var(--neon-red), 0.8) 40%, transparent 70%)',
-          boxShadow: '0 0 20px hsl(var(--neon-red)), 0 0 40px hsl(var(--neon-red))',
+          background: 'radial-gradient(circle, #3b82f6 0%, rgba(59, 130, 246, 0.8) 40%, transparent 70%)',
+          boxShadow: '0 0 20px #3b82f6, 0 0 40px #3b82f6',
         }}
       />
 
       {/* Ripple effect on click */}
       {isClicking && (
         <div
-          className="fixed pointer-events-none z-[9997] w-12 h-12 rounded-full border-2 border-neon-red animate-ping"
+          className="fixed pointer-events-none z-[9997] w-12 h-12 rounded-full border-2 border-blue-500 animate-ping"
           style={{
             left: position.x - 24,
             top: position.y - 24,

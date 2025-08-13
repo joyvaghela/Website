@@ -1,73 +1,121 @@
-# Welcome to your Lovable project
+# Joy Vaghela Portfolio
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/a5d210d7-f6f3-47c8-ad29-4a1d8741d2d3
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern Design**: Clean blue and white theme with smooth animations
+- **Responsive**: Optimized for all devices and screen sizes
+- **Fast Performance**: Built with Vite for optimal loading speeds
+- **Interactive Elements**: Custom cursor, smooth scrolling, and hover effects
+- **Professional Sections**: Hero, About, Education, Projects, Skills, and Contact
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, CSS Animations
+- **Build Tool**: Vite
+- **UI Components**: Radix UI, Shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Netlify
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a5d210d7-f6f3-47c8-ad29-4a1d8741d2d3) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd joy-vaghela-animated-playground-main
+   ```
 
-**Use your preferred IDE**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-Follow these steps:
+## 🌐 Netlify Deployment
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project is configured for easy deployment on Netlify:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Automatic Deployment
+1. Connect your GitHub repository to Netlify
+2. Netlify will automatically detect the build settings:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+   - **Node version**: 18
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Manual Deployment
+1. Build the project: `npm run build`
+2. Upload the `dist` folder to Netlify
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Environment Variables
+No environment variables are required for this project.
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── ui/             # Shadcn/ui components
+│   ├── LoadingScreen.tsx
+│   ├── Navigation.tsx
+│   ├── HeroSection.tsx
+│   ├── AboutSection.tsx
+│   ├── EducationSection.tsx
+│   ├── ProjectsSection.tsx
+│   ├── SkillsSection.tsx
+│   ├── ContactSection.tsx
+│   └── CustomCursor.tsx
+├── pages/              # Page components
+├── assets/             # Images and static files
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── index.css           # Global styles
 ```
 
-**Edit a file directly in GitHub**
+## 🎨 Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Colors
+The project uses a blue and white color scheme defined in `src/index.css`:
+- Primary blue: `#3b82f6`
+- Background: Light blue to white gradients
+- Text: Various shades of blue
 
-**Use GitHub Codespaces**
+### Content
+Update the content in each component file:
+- `HeroSection.tsx` - Main hero content
+- `AboutSection.tsx` - Personal information
+- `ProjectsSection.tsx` - Project showcase
+- `SkillsSection.tsx` - Skills and expertise
+- `ContactSection.tsx` - Contact information
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🐛 Troubleshooting
 
-## What technologies are used for this project?
+### Build Issues
+- Ensure Node.js version 18 or higher
+- Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
+- Check for TypeScript errors: `npm run lint`
 
-This project is built with:
+### Netlify Issues
+- Verify build command is `npm run build`
+- Check publish directory is `dist`
+- Ensure all dependencies are in `package.json`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 License
 
-## How can I deploy this project?
+This project is open source and available under the [MIT License](LICENSE).
 
-Simply open [Lovable](https://lovable.dev/projects/a5d210d7-f6f3-47c8-ad29-4a1d8741d2d3) and click on Share -> Publish.
+## 👤 Contact
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Name**: Joy Vaghela
+- **Email**: joy@example.com
+- **Portfolio**: [Live Demo](https://your-netlify-url.netlify.app)
