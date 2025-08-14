@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 
 const aboutText = [
+  {
   "Hey  there!  I'm  Joy  Vaghela,  a  passionate  developer  who  believes  in  turning  complex  problems  into  elegant  solutions.",
   "When  I'm  not  coding,  you'll  find  me  exploring  new  technologies  and  pushing  the  boundaries  of  what's  possible  in  web  development.",
   "I  bring  precision  and  dedication  to  my  development  work,  creating  applications  that  perform  under  pressure  and  deliver  exceptional  user  experiences.",
   "My  journey  in  tech  started  with  curiosity  and  has  evolved  into  a  mission  to  build  digital  experiences  that  make  a  difference."
+  }
 ];
 
 const skills = [
