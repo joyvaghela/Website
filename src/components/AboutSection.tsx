@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
 const aboutText = [
-  "Hey there! I'm Joy Vaghela, a passionate developer who believes in turning complex problems into elegant solutions.",
-  "When I'm not coding, you'll find me exploring new technologies and pushing the boundaries of what's possible in web development.",
-  "I bring precision and dedication to my development work, creating applications that perform under pressure and deliver exceptional user experiences.",
-  "My journey in tech started with curiosity and has evolved into a mission to build digital experiences that make a difference."
+  "Hey  there!  I'm  Joy  Vaghela,  a  passionate  developer  who  believes  in  turning  complex  problems  into  elegant  solutions.",
+  "When  I'm  not  coding,  you'll  find  me  exploring  new  technologies  and  pushing  the  boundaries  of  what's  possible  in  web  development.",
+  "I  bring  precision  and  dedication  to  my  development  work,  creating  applications  that  perform  under  pressure  and  deliver  exceptional  user  experiences.",
+  "My  journey  in  tech  started  with  curiosity  and  has  evolved  into  a  mission  to  build  digital  experiences  that  make  a  difference."
 ];
 
 const skills = [
@@ -56,7 +56,7 @@ export const AboutSection = () => {
 
   return (
     <section id="about" ref={sectionRef} className="py-20 relative overflow-hidden">
-      {/* Static Background */}
+      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white" />
 
       <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -71,7 +71,10 @@ export const AboutSection = () => {
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-8'
               }`}
-              style={{ transitionDelay: `${index * 200}ms` }}
+              style={{
+                transitionDelay: `${index * 200}ms`,
+                whiteSpace: 'pre-line' // 👈 preserves spaces & line breaks
+              }}
             >
               {paragraph}
             </p>
@@ -90,8 +93,8 @@ export const AboutSection = () => {
               Development Philosophy
             </h3>
             <p className="text-blue-700">
-              "Every line of code matters. Whether you're building a simple component or a complex application, 
-              it's about attention to detail, clean architecture, and creating solutions that scale."
+              "Every  line  of  code  matters.  Whether  you're  building  a  simple  component  or  a  complex  application, 
+              it's  about  attention  to  detail,  clean  architecture,  and  creating  solutions  that  scale."
             </p>
           </div>
         </div>
@@ -124,7 +127,7 @@ export const AboutSection = () => {
             ))}
           </div>
 
-          {/* Skills with Progress */}
+          {/* Skills */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-center mb-6 text-blue-700">Core Strengths</h3>
             {skills.map((skill, index) => (
@@ -156,11 +159,11 @@ export const AboutSection = () => {
             ))}
           </div>
 
-          {/* Contact Cards */}
+          {/* Contact */}
           <div className="grid grid-cols-2 gap-4 mt-8">
             {[
               { icon: "📧", label: "Email", value: "joyvaghela66@gmail.com" },
-              { icon: "📱", label: "Phone", value: "+91 91738 08700" },
+              { icon: "📱", label: "Phone", value: "+91 91738  08700" },
             ].map((contact, i) => (
               <div
                 key={contact.label}
