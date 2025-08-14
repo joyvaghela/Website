@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const educationData = [
   {
-    year: "2024",
+    year: "2025",
     title: "BscIT FY",
     institution: "Sardar Vallabhbhai Patel Institute of Technology",
     percentage: "Pending",

@@ -172,8 +172,8 @@ export const AboutSection = () => {
             {/* Contact Cards */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                { icon: "📧", label: "Email", value: "joy@example.com" },
-                { icon: "📱", label: "Phone", value: "+91 98765 43210" },
+                { icon: "📧", label: "Email", value: "joyvaghela66@gmail.com" },
+                { icon: "📱", label: "Phone", value: "+91 9173808700" },
               ].map((contact, i) => (
                 <div
                   key={contact.label}

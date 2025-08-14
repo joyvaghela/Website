@@ -8,13 +8,13 @@ const socialLinks = [
   { icon: Github, label: "GitHub", href: "#", color: "blue-600" },
   { icon: Linkedin, label: "LinkedIn", href: "#", color: "blue-600" },
   { icon: Twitter, label: "Twitter", href: "#", color: "blue-600" },
-  { icon: Mail, label: "Email", href: "mailto:joy@example.com", color: "blue-600" },
+  { icon: Mail, label: "Email", href: "mailto:joyvaghela66@gmail.com", color: "blue-600" },
 ];
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "joy@example.com", color: "blue-600" },
-  { icon: Phone, label: "Phone", value: "+91 98765 43210", color: "blue-600" },
-  { icon: MapPin, label: "Location", value: "Mumbai, India", color: "blue-600" },
+  { icon: Mail, label: "Email", value: "joyvaghela66@gmail.com", color: "blue-600" },
+  { icon: Phone, label: "Phone", value: "+91 9173808700", color: "blue-600" },
+  { icon: MapPin, label: "Location", value: "Vadodara,Gujrat, India", color: "blue-600" },
 ];
 
 export const ContactSection = () => {
