@@ -61,9 +61,14 @@ export const AboutSection = () => {
       {/* Background */}
       <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white" />
 
-      {/* Main Container - 80% width, centered */}
-      <span className="max-w-[80%] w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
-        
+      {/* Main Container - 80% width centered */}
+      <span
+        className="w-full grid lg:grid-cols-2 gap-16 items-center relative z-10"
+        style={{
+          maxWidth: "80%",
+          margin: "0 auto"
+        }}
+      >
         {/* Left Side - Story */}
         <span className="space-y-6">
           {aboutText.map((paragraph, index) => (
@@ -71,12 +76,14 @@ export const AboutSection = () => {
               key={index}
               className={`block text-lg leading-relaxed text-blue-700 transition-all duration-1000 ${
                 visibleParagraphs > index
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-8'
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
               }`}
               style={{
                 transitionDelay: `${index * 200}ms`,
-                whiteSpace: 'pre-line'
+                whiteSpace: "pre-line",
+                display: "block",
+                marginBottom: "1.5rem"
               }}
             >
               {paragraph}
@@ -87,8 +94,8 @@ export const AboutSection = () => {
           <span
             className={`block bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg transition-all duration-1000 ${
               visibleParagraphs >= 4
-                ? 'opacity-100 scale-100'
-                : 'opacity-0 scale-95'
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-95"
             }`}
           >
             <span className="block text-xl font-bold text-blue-600 mb-3 flex items-center gap-2">
@@ -104,7 +111,6 @@ export const AboutSection = () => {
 
         {/* Right Side - Skills & Stats */}
         <span className="space-y-8">
-          
           {/* Quick Stats */}
           <span className="grid grid-cols-2 gap-4">
             {[
@@ -117,15 +123,17 @@ export const AboutSection = () => {
                 key={stat.label}
                 className={`block bg-white/80 backdrop-blur-sm p-6 text-center rounded-2xl shadow-lg hover:shadow-xl transition-all duration-1000 ${
                   visibleParagraphs >= 2
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-8'
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <span className="block text-3xl font-black text-blue-600 animate-pulse">
                   {stat.value}
                 </span>
-                <span className="block text-sm text-blue-600/70">{stat.label}</span>
+                <span className="block text-sm text-blue-600/70">
+                  {stat.label}
+                </span>
               </span>
             ))}
           </span>
@@ -140,8 +148,8 @@ export const AboutSection = () => {
                 key={skill.name}
                 className={`block bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg transition-all duration-500 hover:shadow-xl ${
                   animatedSkills[index]
-                    ? 'opacity-100 translate-x-0'
-                    : 'opacity-0 -translate-x-8'
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 -translate-x-8"
                 }`}
               >
                 <span className="flex items-center justify-between mb-3">
@@ -149,14 +157,18 @@ export const AboutSection = () => {
                     <span className="animate-bounce">{skill.icon}</span>
                     {skill.name}
                   </span>
-                  <span className="text-blue-600 font-bold">{skill.level}%</span>
+                  <span className="text-blue-600 font-bold">
+                    {skill.level}%
+                  </span>
                 </span>
                 <span className="w-full bg-blue-100 rounded-full h-2 overflow-hidden block">
                   <span
                     className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-2000 ease-out block"
                     style={{
-                      width: animatedSkills[index] ? `${skill.level}%` : '0%',
-                      transitionDelay: '300ms'
+                      width: animatedSkills[index]
+                        ? `${skill.level}%`
+                        : "0%",
+                      transitionDelay: "300ms"
                     }}
                   />
                 </span>
@@ -174,14 +186,20 @@ export const AboutSection = () => {
                 key={contact.label}
                 className={`block bg-white/80 backdrop-blur-sm p-4 text-center rounded-2xl shadow-lg hover:shadow-xl cursor-pointer transition-all duration-1000 ${
                   visibleParagraphs >= 3
-                    ? 'opacity-100 rotate-0'
-                    : 'opacity-0 rotate-12'
+                    ? "opacity-100 rotate-0"
+                    : "opacity-0 rotate-12"
                 }`}
                 style={{ transitionDelay: `${i * 200 + 1000}ms` }}
               >
-                <span className="block text-2xl mb-2 animate-bounce">{contact.icon}</span>
-                <span className="block text-xs text-blue-600/70">{contact.label}</span>
-                <span className="block text-sm font-semibold text-blue-700">{contact.value}</span>
+                <span className="block text-2xl mb-2 animate-bounce">
+                  {contact.icon}
+                </span>
+                <span className="block text-xs text-blue-600/70">
+                  {contact.label}
+                </span>
+                <span className="block text-sm font-semibold text-blue-700">
+                  {contact.value}
+                </span>
               </span>
             ))}
           </span>
