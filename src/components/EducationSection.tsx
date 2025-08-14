@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 const educationData = [
   {
     year: "2024",
-    title: "Computer Science Engineering",
-    institution: "Premier Institute of Technology",
-    percentage: "8.9 CGPA",
+    title: "BscIT FY",
+    institution: "Sardar Vallabhbhai Patel Institute of Technology",
+    percentage: "Pending",
     achievements: ["Dean's List", "Tech Lead", "Project Manager"],
     icon: "🎓",
     color: "blue-600"
@@ -13,8 +13,8 @@ const educationData = [
   {
     year: "2020",
     title: "Higher Secondary (12th)",
-    institution: "Excellence Higher Secondary School",
-    percentage: "92.5%",
+    institution: "Lal Bahadur Shashtari Vidhyalaya ",
+    percentage: "71%",
     achievements: ["Programming Club", "Academic Excellence", "Student Council"],
     icon: "📚",
     color: "blue-600"
@@ -22,8 +22,8 @@ const educationData = [
   {
     year: "2018",
     title: "Secondary School (10th)",
-    institution: "Bright Future School",
-    percentage: "95.2%",
+    institution: "Lal Bahadur Shashtari Vidhyalaya",
+    percentage: "55%",
     achievements: ["Math Olympiad", "Student Leader", "Science Fair Winner"],
     icon: "🏆",
     color: "blue-600"
