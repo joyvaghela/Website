@@ -173,7 +173,7 @@ export const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
                 { icon: "📧", label: "Email", value: "joyvaghela66@gmail.com" },
-                { icon: "📱", label: "Phone", value: "+91 9173808700" },
+                { icon: "📱", label: "Phone", value: "+91 91738 08700" },
               ].map((contact, i) => (
                 <div
                   key={contact.label}

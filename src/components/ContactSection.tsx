@@ -13,7 +13,7 @@ const socialLinks = [
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "joyvaghela66@gmail.com", color: "blue-600" },
-  { icon: Phone, label: "Phone", value: "+91 9173808700", color: "blue-600" },
+  { icon: Phone, label: "Phone", value: "+91 91738 08700", color: "blue-600" },
   { icon: MapPin, label: "Location", value: "Vadodara,Gujrat, India", color: "blue-600" },
 ];
 
