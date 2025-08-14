@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
 const aboutText = [
-  "Hey there! I'm Joy Vaghela, a passionate developer who believes in turning complex problems into elegant solutions.",
-  "When I'm not coding, you'll find me exploring new technologies and pushing the boundaries of what's possible in web development.",
-  "I bring precision and dedication to my development work, creating applications that perform under pressure and deliver exceptional user experiences.",
-  "My journey in tech started with curiosity and has evolved into a mission to build digital experiences that make a difference."
+  "Hey  there!  I'm  Joy  Vaghela,  a  passionate  developer  who  believes  in  turning  complex  problems  into  elegant  solutions.",
+  "When  I'm  not  coding,  you'll  find  me  exploring  new  technologies  and  pushing  the  boundaries  of  what's  possible  in  web  development.",
+  "I  bring  precision  and  dedication  to  my  development  work,  creating  applications  that  perform  under  pressure  and  deliver  exceptional  user  experiences.",
+  "My  journey  in  tech  started  with  curiosity  and  has  evolved  into  a  mission  to  build  digital  experiences  that  make  a  difference."
 ];
 
 const skills = [
@@ -173,7 +173,7 @@ export const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
                 { icon: "📧", label: "Email", value: "joyvaghela66@gmail.com" },
-                { icon: "📱", label: "Phone", value: "+91 91738 08700" },
+                { icon: "📱", label: "Phone", value: "+91 91738  08700" },
               ].map((contact, i) => (
                 <div
                   key={contact.label}
